@@ -15,3 +15,17 @@ Add app to Project:
     go to settings.py
     go to installed apps
     add appname to list
+
+Add "function" to app:
+    go to <appname>.views.py
+    create function, example:
+        def function1(request):
+            return HttpResponse("Hello, world!")
+    add urls.py to app directory
+    inside urls.py:
+        urlpatterns = [
+            path("", views.function1, name="index")  <--- name allows us to track this later
+        ]
+    go to <projectname>.urls.py
+    add to urlpatterns
+        path('hello/', include("hello.urls"))
