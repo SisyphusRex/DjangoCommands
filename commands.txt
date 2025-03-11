@@ -8,3 +8,10 @@ Run Django Project:
             run webserver
         startapp <appname>
             create application
+
+Add app to Project:
+    python manage.py startapp
+    then go to project
+    go to settings.py
+    go to installed apps
+    add appname to list
