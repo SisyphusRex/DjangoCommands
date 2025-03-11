@@ -6,3 +6,5 @@ Run Django Project:
     Commands:
         runserver
             run webserver
+        startapp <appname>
+            create application
