@@ -1,2 +1,8 @@
 Create Django Project:
     django-admin startproject PROJECT_NAME
+
+Run Django Project:
+    python manage.py <command>
+    Commands:
+        runserver
+            run webserver
