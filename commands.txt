@@ -24,8 +24,9 @@ Add "function" to app:
     add urls.py to app directory
     inside urls.py:
         urlpatterns = [
-            path("", views.function1, name="index")  <--- name allows us to track this later
+           path("", views.function1, name="index")  <--- name allows us to track this later
         ]
+    ** path(<what you type in url bar>, <what happens at that url>, "" blank is default, rename as needed
     go to <projectname>.urls.py
     add to urlpatterns
         path('hello/', include("hello.urls"))
