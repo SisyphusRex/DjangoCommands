@@ -30,3 +30,12 @@ Add "function" to app:
     go to <projectname>.urls.py
     add to urlpatterns
         path('hello/', include("hello.urls"))
+
+Function that takes in url as argument:
+    inside <appname>.views.py
+    def greet(request, name):
+        return HttpResponse(f"Hello, {name}!")
+    inside <appname>.urls.py
+        add
+            path("<str:name>", views.greet, name="greet")
+        to urlpatterns
