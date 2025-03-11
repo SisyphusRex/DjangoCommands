@@ -39,3 +39,11 @@ Function that takes in url as argument:
         add
             path("<str:name>", views.greet, name="greet")
         to urlpatterns
+
+Use html templates:
+    inside app, create new directory called templates
+    inside templates, create directory with name of app
+        hello.templates.hello.index.html
+    ** Best practice to name directory inside templates the same as app **
+    
+    
