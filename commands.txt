@@ -46,4 +46,6 @@ Use html templates:
         hello.templates.hello.index.html
     ** Best practice to name directory inside templates the same as app **
     
-    
+Autocomplete on HTML files doesnt work:
+    bottom right of VSCode
+    change Djanog HTML to HTML
