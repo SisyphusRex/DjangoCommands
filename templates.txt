@@ -1,0 +1,6 @@
+Django Logic inside HTML
+  {% if newyear %}
+    <h1>YES</h1>
+  {% else %}
+    <h1>NO</h1>
+  {% endif %}
