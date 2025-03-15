@@ -10,7 +10,7 @@ Run Django Project:
             create application
 
 Add app to Project:
-    python manage.py startapp
+    python manage.py startapp <appname>
     then go to project
     go to settings.py
     go to installed apps
