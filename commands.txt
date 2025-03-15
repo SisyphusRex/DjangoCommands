@@ -16,6 +16,12 @@ Add app to Project:
     go to installed apps
     add appname to list
 
+Add app to project url:
+    ie add to site url
+    go to project urls.py
+    in urlpatterns:
+        path('<appname>/', include("<appname>.urls")),
+
 Add "function" to app:
     go to <appname>.views.py
     create function, example:
