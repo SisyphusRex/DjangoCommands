@@ -4,3 +4,7 @@ Django Logic inside HTML
   {% else %}
     <h1>NO</h1>
   {% endif %}
+
+
+To call variable passed by view:
+  {{ <variablename> }}
