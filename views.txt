@@ -7,3 +7,4 @@ def index(request):
   })
 
 ** Here we are passing the bool variable "newyear" into the template index.html
+  the { "variablename": value} is a key value pair to pass the value whenever the key is used in the template
