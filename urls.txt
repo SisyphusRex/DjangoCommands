@@ -1,0 +1,8 @@
+** The urls.py file defines the path that urls entered in browser go to which view
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+  path("", views.index, name="index"),  <----empty url, or if user only puts domain name into browser i.e. 127.0.0.1:8000  *except if index is inside app inside project then 127.0.0.1:8000/<appname>
+  path("<urlkeyword>", views.<urlkeyword>, name = "<generally urlkeyword>")   <---- view when user types 127.0.0.1:8000/<appname>/<urlkeyword>
