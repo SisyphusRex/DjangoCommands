@@ -8,3 +8,18 @@ Django Logic inside HTML
 
 To call variable passed by view:
   {{ <variablename> }}
+
+
+Create Base Template/Layout:
+  add layout.html to templates/../
+  define html page
+  wherever you want to define customizable sections
+    {% block <name> %}
+    {% endblock %}
+
+Use Layout:
+  inside html file at top
+    {% extends "tasks/layout.html" %}
+    {% block <name> %}
+      <enter all your stuff for this block here
+    {% endblock %}
