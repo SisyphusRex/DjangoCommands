@@ -4,3 +4,12 @@ Static files within django app
 Create new folder inside app folder called static
   inside static create folder called <appname>
     eg. newyear/static/newyear/styles.css
+
+Reference Automatically (django only):
+  inside template (html)
+    {% load static %}
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <link rel="stylesheet" href="{% static 'newyear/styles.css' %}">
+  django will look for the static folder and styles.css
