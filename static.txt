@@ -1,0 +1,6 @@
+Static files within django app
+  such as css for html templates
+
+Create new folder inside app folder called static
+  inside static create folder called <appname>
+    eg. newyear/static/newyear/styles.css
