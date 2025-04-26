@@ -1,3 +1,8 @@
+return HttpResponse("type your message here"):
+  simple message sent to browser
+return render(request, "hello/index.html")
+  sends html to browser
+
 Pass variables from view into template to render:
 
 def index(request):
