@@ -5,11 +5,11 @@ return render(request, "hello/index.html")
 
 Pass variables from view into template to render:
 
-def index(request):
-  now = datetime.datetime.now()
-  return render(request, "newyear/index.html", {
-    "newyear": now.month == 1 and now.day == 1
-  })
+  def index(request):
+    now = datetime.datetime.now()
+    return render(request, "newyear/index.html", {
+      "newyear": now.month == 1 and now.day == 1
+    })
 
-** Here we are passing the bool variable "newyear" into the template index.html
-  the { "variablename": value} is a key value pair to pass the value whenever the key is used in the template
+  ** Here we are passing the bool variable "newyear" into the template index.html
+    the { "variablename": value} is a key value pair to pass the value whenever the key is used in the template
