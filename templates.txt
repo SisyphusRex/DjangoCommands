@@ -34,3 +34,6 @@ Use Layout:
     {% block <name> %}
       <enter all your stuff for this block here
     {% endblock %}
+
+Add link
+  <a href="/tasks/add">Add a new task</a>
