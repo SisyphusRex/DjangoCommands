@@ -49,3 +49,4 @@ Empty conditions (if for loop has nothing in it to loop over)
     {% empty %}
       <li>No tasks.</li>
     {% endfor %}
+  </ul>
