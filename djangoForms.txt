@@ -1,7 +1,11 @@
+Django has premade forms that does client side input validation.
+
 To get premade forms, start in views.py:
   from django import forms
   class NewTaskForm(forms.Form):
     task = forms.CharField(label="New Task")
+    priority = forms.IntegerField(label="Priority", min_value=1, max_value=10)
+
   def add(request):
     return render(request, "tasks/add.html", {
       "form": NewTaskForm()
