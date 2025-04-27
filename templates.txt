@@ -38,4 +38,4 @@ Use Layout:
 Add link
   <a href="/tasks/add">Add a new task</a>
   OR
-  <a href="<nameusedinurls.py>">Add a new task</a>
+  <a href="{% url 'add' %}">Add a new task</a>
