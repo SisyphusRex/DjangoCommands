@@ -1,0 +1,15 @@
+To get premade forms, start in views.py:
+  from django import forms
+  class NewTaskForm(forms.Form):
+    task = forms.CharField(label="New Task")
+  def add(request):
+    return render(request, "tasks/add.html", {
+      "form": NewTaskForm()
+    })
+
+Then go to add.html:
+  <form action="{% url 'tasks:add' %}" method="post">
+  {% csrf_token %}
+  {{ form }}
+  <input type="submit">
+  </form>
