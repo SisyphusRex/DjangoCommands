@@ -39,3 +39,5 @@ Add link
   <a href="/tasks/add">Add a new task</a>
   OR
   <a href="{% url 'add' %}">Add a new task</a>
+  OR
+  <a href="{% url 'tasks:add' %}">Add a new task</a>    <---- Use this if app_name added to urls.py to avoid collisions
