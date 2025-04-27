@@ -10,6 +10,6 @@ To get premade forms, start in views.py:
 Then go to add.html:
   <form action="{% url 'tasks:add' %}" method="post">
   {% csrf_token %}
-  {{ form }}
+  {{ form }} <--- this pulls in our NewTaskForm
   <input type="submit">
   </form>
