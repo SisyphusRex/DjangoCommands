@@ -7,7 +7,7 @@ Add Templates to App
   myproject/myapp/templates/myappname
 
 Templates inside views.py
-  "myappname/templatename.html"
+  return render(request, "myappname/templatename.html")
 
 Django Logic inside HTML
   {% if newyear %}
