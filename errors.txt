@@ -1,0 +1,4 @@
+OperationalError
+  no such table: django_session
+  you must create the session tables first by command line:
+    python manage.py migrate
