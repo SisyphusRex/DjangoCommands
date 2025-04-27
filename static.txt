@@ -12,4 +12,5 @@ Reference Automatically (django only):
     <html>
       <head>
         <link rel="stylesheet" href="{% static 'newyear/styles.css' %}">
+      </head>
   django will look for the static folder and styles.css
