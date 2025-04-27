@@ -13,3 +13,12 @@ Pass variables from view into template to render:
 
   ** Here we are passing the bool variable "newyear" into the template index.html
     the { "variablename": value} is a key value pair to pass the value whenever the key is used in the template
+
+To get premade forms:
+  from django import forms
+  class NewTaskForm(forms.Form):
+    task = forms.CharField(label="New Task")
+  def add(request):
+    return render(request, "tasks/add.html", {
+      "form": NewTaskForm()
+    })
