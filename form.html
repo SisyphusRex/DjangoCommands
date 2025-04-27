@@ -1,4 +1,5 @@
-<form action="{% url 'tasks:add' %}>
+<form action="{% url 'tasks:add' %}" method ="post"> <!--action does that url thing and post allows us to change info -->
+  {% csrf_token %} <!--django token to prevent cross site scripting -->
   <input type="text" name="task">
   <input type="submit">
 </form>
