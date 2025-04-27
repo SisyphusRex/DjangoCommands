@@ -5,5 +5,7 @@ def index(request):
   if "tasks" not in request.session:
     request.session["tasks"] = []
 and replace all references to "tasks" list with request.session["tasks"]
+ALSO, rather than appending to list, you must:
+  request.session["tasks"] += [task]
 Then in terminal:
   python manage.py migrate
