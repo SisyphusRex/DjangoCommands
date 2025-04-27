@@ -1,3 +1,11 @@
+Add Templates to App
+  Inside App Directory inside Project Directory
+  Add templates directory
+  Inside templates directory
+  Add appname directory
+  Example
+  myproject/myapp/templates/myappname
+
 Django Logic inside HTML
   {% if newyear %}
     <h1>YES</h1>
