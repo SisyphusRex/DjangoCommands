@@ -8,7 +8,7 @@ Pass variables from view into template to render:
   def index(request):
     now = datetime.datetime.now()
     return render(request, "newyear/index.html", {
-      "newyear": now.month == 1 and now.day == 1
+      "newyear": now.month == 1 and now.day == 1    <-------context, or variables to pass to html
     })
 
   ** Here we are passing the bool variable "newyear" into the template index.html
