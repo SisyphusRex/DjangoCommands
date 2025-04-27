@@ -1,0 +1,6 @@
+Allow different users to access unique data to that user.
+Rather than keeping list tasks outside of routes in views.py, put inside route function:
+
+def index(request):
+  if "tasks" not in request.session:
+    request.session["tasks"] = []
