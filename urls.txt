@@ -3,6 +3,7 @@
 from django.urls import path
 from . import views
 
+app_name = "tasks"  <---- use this to avoid name collisions between different apps
 urlpatterns = [
   path("", views.index, name="index"),  <----empty url, or if user only puts domain name into browser i.e. 127.0.0.1:8000  *except if index is inside app inside project then 127.0.0.1:8000/<appname>
   path("<urlkeyword>", views.<urlkeyword>, name = "<generally urlkeyword>")   <---- view when user types 
