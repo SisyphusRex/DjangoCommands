@@ -34,3 +34,9 @@ To get form data using post and validate server side:
         return render(request, "tasks/add.html", {      <---- Returns to add page with old data
           "form": form        
         })
+
+Redirect user to different page:
+  from django.http import HttpResponseRedirect
+  from django.urls import reverse
+  return HttpResponseRedirect(reverse("tasks:index"))  
+  reverse figures out the url of that view
