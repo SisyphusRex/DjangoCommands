@@ -42,6 +42,12 @@ Add link
   OR
   <a href="{% url 'tasks:add' %}">Add a new task</a>    <---- Use this if app_name added to urls.py to avoid collisions
 
+Add Link to List For loop
+  <ul>
+    {% for entry in entries %}
+      <li><a href="/wiki/{{ entry }}">{{ entry }}</a></li>
+  </ul>
+
 Empty conditions (if for loop has nothing in it to loop over)
   <ul>
     {% for task in tasks %}
