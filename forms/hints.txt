@@ -1,0 +1,5 @@
+The layout contains a form with no input.  We are using Djangos default forms instead.
+
+Djangos default forms are implemented in the views.  They are then passed to the html.
+
+Make sure to use POST method.
