@@ -40,3 +40,5 @@ Redirect user to different page:
   from django.urls import reverse
   return HttpResponseRedirect(reverse("tasks:index"))  
   reverse figures out the url of that view
+  ** If returned view requires arguments:
+    return HttpResponseRedirect(reverse("display", args=(search_title,)))
