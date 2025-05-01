@@ -18,24 +18,16 @@ def index(request):
         form = SearchForm(request.POST)
         if form.is_valid():
             search_title = form.cleaned_data["search"]
-            text = util.get_entry(search_title)
-            if text is None:
-                return render(
-                    request,
-                    "encyclopedia/entryNotFound.html",
-                    {
-                        "title": search_title,
-                    },
-                )
-            else:
-                return render(
-                    request,
-                    "encyclopedia/display.html",
-                    {
-                        "title": search_title,
-                        "text": markdown2.markdown(text),
-                    },
-                )
+            return HttpResponseRedirect(reverse("display", args=(search_title,)))
+        else:
+            return render(
+                request,
+                "encyclopedia/index.html",
+                {
+                    "entries": util.list_entries(),
+                    "search_form": SearchForm(),
+                },
+            )
     else:
         return render(
             request,
