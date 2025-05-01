@@ -17,7 +17,7 @@ To get premade forms, start in views.py:
                 "encyclopedia/index.html",
                 {
                     "entries": util.list_entries(),
-                    "search_form": NewTaskForm(),
+                    "form": NewTaskForm(),
                 },
             )
     return render(request, "tasks/add.html", {
