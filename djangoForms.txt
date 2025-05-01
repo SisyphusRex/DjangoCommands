@@ -7,6 +7,11 @@ To get premade forms, start in views.py:
     priority = forms.IntegerField(label="Priority", min_value=1, max_value=10)
 
   def add(request):
+    if request.method == "POST":
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            search_title = form.cleaned_data["search"]
+            ...
     return render(request, "tasks/add.html", {
       "form": NewTaskForm()
     })
