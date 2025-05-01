@@ -11,7 +11,15 @@ To get premade forms, start in views.py:
         form = SearchForm(request.POST)
         if form.is_valid():
             search_title = form.cleaned_data["search"]
-            ...
+        else:
+            return render(
+                request,
+                "encyclopedia/index.html",
+                {
+                    "entries": util.list_entries(),
+                    "search_form": NewTaskForm(),
+                },
+            )
     return render(request, "tasks/add.html", {
       "form": NewTaskForm()
     })
