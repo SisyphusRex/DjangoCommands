@@ -11,3 +11,9 @@ urlpatterns = [
 ** URL PATTERNS ARE EVALUATED FROM TOP TO BOTTOM **
 
 127.0.0.1:8000/<appname>/<urlkeyword>
+
+If the url pattern passes a variable, the view must use that variable:
+  path("wiki/<str:title>", views.display, name = "display")
+    then
+  def display(request, title):
+    ...
