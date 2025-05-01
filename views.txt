@@ -2,6 +2,13 @@ return HttpResponse("type your message here"):
   simple message sent to browser
 return render(request, "hello/index.html")
   sends html to browser
+  same url
+HttpResponseRedirect
+  sends a new url to browser
+
+Pass Variables from url into view:
+  def display(request, <variable>):
+    ...
 
 Pass variables from view into template to render:
 
