@@ -5,5 +5,5 @@
 3. Apply migration to database
   python manage.py migrate
 
-You can run queries on new database through django shell:
+You can run python commands on new database through django shell:
   python manage.py shell
