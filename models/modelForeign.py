@@ -9,9 +9,9 @@ class Airport(models.model):
     return f"{self.city}: ({self.code})"
 
 class Flight(models.Model):  # class is a child of django model
-  origin = models.ForeignKey(Airport, on_delete=models.CASCADE, related_name="") # makes origin a foreign key, if foreign key (airport) deleted, delete flight 
+  origin = models.ForeignKey(Airport, on_delete=models.CASCADE, related_name="departures") # makes origin a foreign key, if foreign key (airport) deleted, delete flight 
   # related_name allows you to reverse look up all flights with airport as origin
-  destination = models.Charfield(max_length=64)
+  destination = models.ForeignKey(Airport, on_delete=models.CASCADE, related_name="arrivals")
   duration= models.IntegerField()
 
 def __str__(self):
