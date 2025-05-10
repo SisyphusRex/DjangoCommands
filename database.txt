@@ -10,4 +10,12 @@ You can run python commands on new database through django shell:
   from <app_name>.models import <Class_name>
   f = <Class_name>(kwargs) <--- creates an instance of the class with kwargs filled in
   f.save()  <--- saves new object/entry to db
-  <Class_name>.objects.all()  <--- returns all entries in db, should change Class __str__ function
+
+  All objects (returns query set)
+    <set_name> = <Class_name>.objects.all()  <--- returns all entries in db, should change Class __str__ function
+
+  First object
+    <my_obj_name> = <set_name>.first()
+
+  Access object attributes:
+    <my_obj_name>.<attribute>
