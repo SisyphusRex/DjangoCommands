@@ -30,6 +30,8 @@ Add "function" to app:
             return HttpResponse("Hello, world!")
     add urls.py to app directory
     inside urls.py:
+        from django.urls import path
+        from . import views
         urlpatterns = [
            path("", views.function1, name="index")  <--- name allows us to track this later
         ]
