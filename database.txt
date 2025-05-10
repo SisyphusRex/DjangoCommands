@@ -4,6 +4,7 @@
   New file is added to <appname>/migrations/  that contains instructions to django
 3. Apply migration to database
   python manage.py migrate
+4. updates to models.py will automatically apply to db
 
 You can run python commands on new database through django shell:
   python manage.py shell
