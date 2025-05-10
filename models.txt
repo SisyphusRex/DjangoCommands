@@ -2,5 +2,5 @@ Class to create objects in database
 
 class Flight(models.Model)
   # Attributes of the class here
-  origin = models.CharField(max_length=64
+  origin = models.CharField(max_length=64)
   ...
