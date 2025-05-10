@@ -58,3 +58,6 @@ Use html templates:
 Autocomplete on HTML files doesnt work:
     bottom right of VSCode
     change Djanog HTML to HTML
+
+Enter Django Shell
+    python manage.py shell
