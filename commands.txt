@@ -19,6 +19,7 @@ Add app to Project:
 Add app to project url:
     ie add to site url
     go to project urls.py
+    from django.urls import include
     in urlpatterns:
         path('<appname>/', include("<appname>.urls")),
 
