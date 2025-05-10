@@ -1,4 +1,7 @@
 1. Create your model class in models.py (create migration instructions)
-2. Migrate to database
+2. Make django migration instructions
   python manage.py makemigrations
-3. New file is added to <appname>/migrations/  that contains instructions to django
+  New file is added to <appname>/migrations/  that contains instructions to django
+3. Apply migration to database
+  python manage.py migrate
+
