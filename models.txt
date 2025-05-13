@@ -21,6 +21,9 @@ Filter list of objects
 Get First (or only) object from filter list:
   <model_name>.objects.filter(kwarg="").first()
 
+If you know only one result:
+  <model_name>.objects.get(kwarg="")
+
 Add Instances of Models from Shell:
   root directory
   python manage.py shell
