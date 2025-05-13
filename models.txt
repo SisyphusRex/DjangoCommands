@@ -10,6 +10,10 @@ Foreign Keys
     related_name establishes relationship to find reverse from foreign key
     Given an airport, you can find all flights with that airport as origin
 
+Access Related Name Attribute
+  The related_name is an 'attribute' of the foreign key, not the original object
+  <foreign_key_object>.<related_name>.all()  <--- can be first(), last() etc
+
 Add Instances of Models from Shell:
   root directory
   python manage.py shell
