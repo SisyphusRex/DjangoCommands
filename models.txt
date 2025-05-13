@@ -9,3 +9,10 @@ Foreign Keys
   origin = models.ForeignKey(Airport, on_delete=models.CASCADE, related_name="departures")
     related_name establishes relationship to find reverse from foreign key
     Given an airport, you can find all flights with that airport as origin
+
+Add Instances of Models from Shell:
+  root directory
+  python manage.py shell
+  from flights.models import *
+  jfk = Airport(code="JFK", city="New York")
+  jfk.save()
