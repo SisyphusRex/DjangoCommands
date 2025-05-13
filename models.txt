@@ -18,6 +18,9 @@ Filter list of objects
   returns object meeting kwarg condition
   <model_name>.objects.filter(kwarg="")
 
+Get First (or only) object from filter list:
+  <model_name>.objects.filter(kwarg="").first()
+
 Add Instances of Models from Shell:
   root directory
   python manage.py shell
