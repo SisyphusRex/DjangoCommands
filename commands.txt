@@ -60,5 +60,6 @@ Autocomplete on HTML files doesnt work:
     change Djanog HTML to HTML
 
 Enter Django Shell
+    Get into root directory
     python manage.py shell
     Allows you to write python commands inside django terminal
