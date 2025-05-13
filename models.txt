@@ -14,6 +14,10 @@ Access Related Name Attribute
   The related_name is an 'attribute' of the foreign key, not the original object
   <foreign_key_object>.<related_name>.all()  <--- can be first(), last() etc
 
+Filter list of objects
+  returns object meeting kwarg condition
+  <model_name>.objects.filter(kwarg="")
+
 Add Instances of Models from Shell:
   root directory
   python manage.py shell
