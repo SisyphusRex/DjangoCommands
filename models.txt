@@ -40,3 +40,6 @@ Many to Many Relationship
     blank=True, <--- allows empty field or passenger without flight
     related_name="passengers"
   )
+
+Get info of Many to Many
+  flight.passengers.all()
