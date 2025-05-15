@@ -1,0 +1,5 @@
+Create Admin Account:
+  python manage.py createsuperuser
+
+In admin.py
+  import models
