@@ -48,6 +48,11 @@ Add Link to List For loop
       <li><a href="/wiki/{{ entry }}">{{ entry }}</a></li>
   </ul>
 
+Pass variables to link:
+  <a href="/flights/{{ flight.id }}">Flight</a>
+  OR
+  <a href="{% url 'flight' flight.id %}">Flight</a>
+
 Empty conditions (if for loop has nothing in it to loop over)
   <ul>
     {% for task in tasks %}
