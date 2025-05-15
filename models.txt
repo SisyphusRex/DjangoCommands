@@ -33,3 +33,10 @@ Add Instances of Models from Shell:
   from flights.models import *
   jfk = Airport(code="JFK", city="New York")
   jfk.save()
+
+Many to Many Relationship
+  flight = models.ManyToManyField(
+    Flight, 
+    blank=True, <--- allows empty field or passenger without flight
+    related_name="passengers"
+  )
