@@ -14,6 +14,6 @@ def flight(request, flight_id):
     "flights/flight.html",
     {
       "flight": flight,
-      "passengers": flight.passengers,
+      "passengers": flight.passengers.all(),
     },
   )
