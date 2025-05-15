@@ -3,3 +3,8 @@ Create Admin Account:
 
 In admin.py
   import models
+
+Run Webserver, enter Administration App
+  127.0.0.1:8000/admin
+  login
+  you can manipulate database from here
