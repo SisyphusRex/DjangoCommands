@@ -8,3 +8,12 @@ Run Webserver, enter Administration App
   127.0.0.1:8000/admin
   login
   you can manipulate database from here
+
+Configure Admin Interface
+  go to admin.py
+  View more attributes of an object
+    # create a class
+    class FlightAdmin(admin.ModelAdmin):
+      list_display = ("id", "origin", "destination", "duration", "<otherattribute>")
+    admin.site.register(Flight, FlightAdmin)
+  
