@@ -11,6 +11,7 @@ def index(request):
   return render(request, "flights/index.html", {"flights": Flight.objects.all()})
   # in general, render should be used to render an html file
   # render is HttpResponse but able to pass arguments into html
+  # render() requires (request, template, context dictionary (variables to pass into html)
   
 
 def book(request, flight_id):
