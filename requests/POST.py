@@ -7,4 +7,5 @@ def book(request, flight_id):
   if request.method == "POST":
     # a view can have both post and get requests: here we are checking if the request is a post
     flight = Flight.objects.get(pk=flight_id)
-    request.POST["passenger"] # this is the name of the input field of the form on the html
+    passenger_id = int(request.POST["passenger"]) # this is the name of the input field of the form on the html; in this case, we are getting passenger id
+    passenger = Passenger.objects.get(pk=passenger_id) # here we are getting the object from the database using id
