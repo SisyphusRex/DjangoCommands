@@ -1,0 +1,5 @@
+Inside views.py, the functions take request as an argument.
+
+Two different methods to retrieve data:
+  get(): simply return the info
+  POST(): send data to the page and return it; manipulate the database
