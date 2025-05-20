@@ -20,5 +20,5 @@ def book(request, flight_id):
     passenger = Passenger.objects.get(pk=int(request.POST["passenger"]))
     passenger.flights.add(flight)
     return HttpResponseRedirect(reverse("flight", args=(flight.id,)))
-    # After successful POST request, render a new url
+    # After successful POST request, render a new url (uniform resource locator)
     # reverse returns the url named "flight" with arguments
