@@ -6,5 +6,9 @@
   <!-- csrf token prevents cross site scripting, or different user accessing first users form -->
   {% csrf_token %}
   <select name="passenger">
-    
+    {% for passenger in non_passengers %}
+    <!-- we only care about the value returned to our view
+    user only cares about the name of the passenger -->
+    <option value="{{ passenger.id }}">{{ passenger }}</option>
+    {% endfor %}
   </select>
