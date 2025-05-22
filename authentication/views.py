@@ -21,4 +21,10 @@ def login_view(request):
     if user is not None:
       login(request, user)
       return HttpResponseRedirect(reverse("index"))
+    else:
+      return render(
+        request,
+        "users/login.html",
+        {"message": "Invalid credentials."},
+      )
   return render(request, "users/login.html")
