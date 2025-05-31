@@ -14,3 +14,6 @@ Flight.objects.get(pk=flight_id)
   passenger.flights.add(flight)
   # Or
   passenger.first_name = "Joe"
+
+# Filter by parameter
+Flight.objects.filter(origin=JFK)
