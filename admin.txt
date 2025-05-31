@@ -4,6 +4,12 @@ Create Admin Account:
 In admin.py
   import models
 
+in urls.py
+from django.contrib import admin
+
+urlpatterns= [
+  path("admin", admin.site.urls)
+
 Run Webserver, enter Administration App
   127.0.0.1:8000/admin
   login
