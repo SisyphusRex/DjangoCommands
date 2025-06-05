@@ -2,6 +2,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render
 from django.urls import reverse
 from django.http import HttpResponseRedirect
+from django.contrib.auth.decorators import login_required # import to use @login_required decorator to require login before view
 
 def login_view(request):
 
